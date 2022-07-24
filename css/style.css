@@ -1,0 +1,17 @@
+:root{
+	--font:'Overpass', sans-serif;
+	--font-size: clamp(7px, 1.7vw, 30px);
+	--primary-color-orange: hsl(25, 97%, 53%);
+	--neutral-color-white: hsl(0, 0%, 100%);
+	--neutral-color-light-grey: hsl(217, 12%, 63%);
+	--neutral-color-medium-grey: hsl(216, 12%, 54%);
+	--neutral-color-dark-blue: hsl(213, 19%, 18%);
+	--neutral-color-very-dark-blue: hsl(216, 12%, 8%);
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	list-style-type: none;
+}
