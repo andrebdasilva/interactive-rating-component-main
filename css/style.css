@@ -1,17 +1,126 @@
-:root{
-	--font:'Overpass', sans-serif;
-	--font-size: clamp(7px, 1.7vw, 30px);
+:root {
+	--font: 'Overpass', sans-serif;
+	--font-size-title: clamp(11px, 2.5vw, 25px);
+	--font-size-description: clamp(7.5px, 1.5vw, 15px);
+	--font-size-button: clamp(8px, 1.5vw, 16px);
 	--primary-color-orange: hsl(25, 97%, 53%);
+	--primary-color-dark-orange: hsl(25, 76%, 48%);
 	--neutral-color-white: hsl(0, 0%, 100%);
 	--neutral-color-light-grey: hsl(217, 12%, 63%);
 	--neutral-color-medium-grey: hsl(216, 12%, 54%);
 	--neutral-color-dark-blue: hsl(213, 19%, 18%);
+	--neutral-color-dark-blue-transparency: hsl(213, 19%, 18%, .2);
 	--neutral-color-very-dark-blue: hsl(216, 12%, 8%);
+	--neutral-color-icon-dark-grey: hsl(200, 17%, 18%);
+	--border-radius: 28px;
+	--border-radius-circle: 50%;
+	--padding-lr: 40px;
+	--padding-tb: 30px;
+	--padding-button: 12.5px;
 }
 
-*{
+* {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 	list-style-type: none;
+	font-family: var(--font);
+	color: var(--neutral-color-white);
+	border: none;
+	outline: none;
 }
+
+body {
+	background-color: var(--neutral-color-very-dark-blue);
+}
+
+main {
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.container-content {
+	max-width: 413px;
+	max-height: 416px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	background-image: linear-gradient(to bottom, var(--neutral-color-dark-blue),
+			var(--neutral-color-dark-blue-transparency));
+	border-radius: var(--border-radius);
+	padding: var(--padding-tb) var(--padding-lr);
+
+}
+
+.icon {
+	width: 50px;
+	height: 50px;
+	border-radius: var(--border-radius-circle);
+	background-color: var(--neutral-color-icon-dark-grey);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-shrink: 0;
+}
+
+.icon-star {
+	margin-bottom: 37px;
+}
+
+.title {
+	font-size: var(--font-size-title);
+	margin-bottom: 20px;
+	letter-spacing: 2px;
+}
+
+.description {
+	line-height: 25px;
+	margin-bottom: 30px;
+}
+
+.rating-number {
+	display: flex;
+	justify-content: space-between;
+}
+
+.icon-number {
+	cursor: pointer;
+	margin-bottom: 32px;
+	color: var(--neutral-color-medium-grey);
+	font-weight: 600;
+	transition: background-color 250ms ease-in-out;
+}
+
+.icon-number:hover {
+	background-color: var(--primary-color-orange);
+	color: var(--neutral-color-white);
+}
+
+.icon-number:active {
+	background-color: black;
+	color: var(--neutral-color-white);
+}
+
+.btn-submit {
+	cursor: pointer;
+	padding: var(--padding-button);
+	font-size: var(--font-size-button);
+	background-color: var(--primary-color-orange);
+	text-transform: uppercase;
+	border-radius: var(--border-radius);
+	letter-spacing: 2px;
+	font-weight: 600;
+	transition: background-color 200ms ease-in-out;
+}
+
+.btn-submit:hover {
+	background-color: var(--primary-color-dark-orange);
+}
+
+.btn-submit:active {
+	background-color: black;
+}
+/* Card Thank You */
