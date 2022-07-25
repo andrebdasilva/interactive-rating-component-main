@@ -115,6 +115,10 @@ main {
 	background-color: var(--primary-color-orange);
 	color: var(--neutral-color-white);
 }
+.select{
+	background-color: var(--primary-color-orange);
+	color: var(--neutral-color-white);
+}
 
 .icon-number:active {
 	background-color: black;
@@ -147,6 +151,7 @@ main {
 
 /* Card Thank You */
 .container-thank-you{
+	display: none;
 	margin-top: 10px;
 }
 
