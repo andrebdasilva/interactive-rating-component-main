@@ -31,29 +31,29 @@
         to help us improve our offering!
       </p>
       <ul class="rating-number">
-        <li class="icon icon-number">
+        <li class="icon icon-number" data-value="1">
           1
         </li>
-        <li class="icon icon-number">
+        <li class="icon icon-number" data-value="2">
           2
         </li>
-        <li class="icon icon-number">
+        <li class="icon icon-number" data-value="3">
           3
         </li>
-        <li class="icon icon-number">
+        <li class="icon icon-number" data-value="4">
           4
         </li>
-        <li class="icon icon-number">
+        <li class="icon icon-number" data-value="5">
           5
         </li>
       </ul>
-      <button class="btn-submit" type="submit">
+      <button class="btn-submit" type="submit" id="btn-submit" disabled="true">
         Submit
       </button>
     </section>
 
     <section class="container-content container-thank-you">
-      <div class="container-select-rating">   
+      <div class="container-select-rating">
         <div class="icon-thank-you">
           <svg width="162" height="108" xmlns="http://www.w3.org/2000/svg">
             <g fill="none">
@@ -90,14 +90,14 @@
                 d="M73.731 35.75a.537.537 0 0 1-.038-1.076c.113 0 11.343-.828 17.363-.29a.54.54 0 0 1-.096 1.076c-5.908-.538-17.079.274-17.186.285l-.043.005Zm-.891 7.279a.538.538 0 0 1-.038-1.076c.113 0 11.342-.828 17.363-.29a.54.54 0 0 1-.097 1.076c-5.907-.538-17.073.28-17.185.285l-.043.005Zm-.102 7.564a.538.538 0 0 1-.043-1.076c.112 0 11.347-.829 17.362-.29a.54.54 0 0 1-.096 1.075c-5.908-.538-17.073.28-17.186.286l-.037.005Zm-.715 7.564a.537.537 0 0 1-.037-1.076c.112 0 11.342-.829 17.362-.285a.54.54 0 0 1-.096 1.076c-5.908-.538-17.073.28-17.186.285h-.043Z"
                 fill="#FFF" />
             </g>
-          </svg>    
-        </div>        
+          </svg>
+        </div>
         <div class="rating-select">
-            <p>
-              You selected <span class="rating-result">
-                <!-- Add rating here -->
-              </span> out of 5
-            </p>          
+          <p>
+            You selected <span class="rating-result">
+              <!-- Add rating here -->
+            </span> out of 5
+          </p>
         </div>
       </div>
       <h2 class="title title-thank-you">
@@ -112,4 +112,5 @@
 
   <script src="./js/script.js"></script>
 </body>
+
 </html>

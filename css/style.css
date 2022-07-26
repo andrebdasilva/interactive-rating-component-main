@@ -54,9 +54,9 @@ main {
 	display: flex;
 	flex-direction: column;
 	background-image: linear-gradient(to bottom, var(--neutral-color-dark-blue),
-												 var(--neutral-color-dark-blue-transparency));
+			var(--neutral-color-dark-blue-transparency));
 	border-radius: var(--border-radius);
-	padding: var(--padding-tb);	
+	padding: var(--padding-tb);
 	text-align: center;
 }
 
@@ -64,7 +64,7 @@ main {
 	text-align: left;
 }
 
-.icon {	
+.icon {
 	width: 50px;
 	height: 50px;
 	border-radius: var(--border-radius-circle);
@@ -72,21 +72,21 @@ main {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	flex-shrink: 0;	
+	flex-shrink: 0;
 }
 
-.icon-star {	
+.icon-star {
 	margin-bottom: 30px;
 }
 
-.title {	
+.title {
 	color: var(--neutral-color-white);
 	font-size: var(--font-size-title);
 	letter-spacing: 2px;
 	margin-bottom: 20px;
 }
 
-.description {	
+.description {
 	color: var(--neutral-color-medium-grey);
 	font-size: var(--font-size-description);
 	font-weight: 500;
@@ -111,11 +111,13 @@ main {
 	transition: background-color 250ms ease-in-out;
 }
 
+
 .icon-number:hover {
 	background-color: var(--primary-color-orange);
 	color: var(--neutral-color-white);
 }
-.select{
+
+.active {
 	background-color: var(--primary-color-orange);
 	color: var(--neutral-color-white);
 }
@@ -125,20 +127,20 @@ main {
 	color: var(--neutral-color-white);
 }
 
-.btn-submit {	
+.btn-submit {
 	display: flex;
 	justify-content: center;
-	align-content: center;	
+	align-content: center;
 	cursor: pointer;
 	font-size: var(--font-size-button);
 	background-color: var(--primary-color-orange);
 	border-radius: var(--border-radius);
 	color: var(--neutral-color-white);
-	text-transform: uppercase;	
+	text-transform: uppercase;
 	letter-spacing: 1px;
-	font-weight: 600;	
+	font-weight: 600;
 	padding: var(--padding-button);
-	transition: background-color 200ms ease-in-out;	
+	transition: background-color 200ms ease-in-out;
 }
 
 .btn-submit:hover {
@@ -149,18 +151,22 @@ main {
 	background-color: black;
 }
 
+.btn-submit[disabled] {
+	opacity: 0.7;
+}
+
 /* Card Thank You */
-.container-thank-you{
+.container-thank-you {
 	display: none;
 	margin-top: 10px;
 }
 
-.container-select-rating{
+.container-select-rating {
 	margin: auto;
 	margin-bottom: 30px;
 }
 
-.rating-select{	
+.rating-select {
 	width: 100%;
 	background-color: var(--neutral-color-icon-dark-grey);
 	color: var(--primary-color-orange);
@@ -168,6 +174,6 @@ main {
 	padding: var(--padding-tb-rating) var(--padding-lr-rating);
 }
 
-.icon-thank-you{
+.icon-thank-you {
 	margin-bottom: 30px;
 }
