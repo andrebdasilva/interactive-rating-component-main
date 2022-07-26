@@ -1,7 +1,8 @@
 :root {
 	--font: 'Overpass', sans-serif;
-	--font-size-title: clamp(25px, 2.5vw, 25px);
+	--font-size-title: clamp(23px, 2.5vw, 25px);
 	--font-size-description: clamp(14px, 1.45vw, 16px);
+	--font-size-rating: clamp(13px, 1.45vw, 16px);
 	--font-size-button: clamp(14px, 1.5vw, 16px);
 	--primary-color-orange: hsl(25, 97%, 53%);
 	--primary-color-dark-orange: hsl(25, 93%, 41%);
@@ -163,17 +164,57 @@ main {
 
 .container-select-rating {
 	margin: auto;
+	display: flex;
+	flex-direction: column;	
+	width: 60%;
+	margin-bottom: 30px;
+	font-size: var(--font-size-rating);
+}
+
+.icon-thank-you {
 	margin-bottom: 30px;
 }
 
 .rating-select {
-	width: 100%;
 	background-color: var(--neutral-color-icon-dark-grey);
 	color: var(--primary-color-orange);
 	border-radius: var(--border-radius);
 	padding: var(--padding-tb-rating) var(--padding-lr-rating);
 }
 
-.icon-thank-you {
-	margin-bottom: 30px;
+
+
+@media screen and (max-width: 375px) {
+
+	.container-content {
+		padding: 20px;		
+	}
+
+	.icon{
+		width: 45px;
+		height: 45px;
+	}
+	
+	.icon-star,	
+	.description {
+		margin-bottom: 20px;
+	}
+
+	.title {
+		margin-bottom: 12px;
+	}
+
+	.btn-submit {		
+		letter-spacing: 2px;
+		font-weight: 500;		
+	}
+
+	.container-select-rating,
+	.icon-thank-you {
+		margin-bottom: 20px;
+	}
+
+	.icon-thank-you {
+		margin-top: 20px;
+	}
 }
