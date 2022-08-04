@@ -8,7 +8,7 @@ Esta é uma solução para o [Desafio do componente de avaliação interativa do
 ## Índice
 
 - [Visão Geral](#visáo-geral)  
-  - [O Desáfio](#o-desáfio)  
+  - [O Desafio](#o-desafio)  
   - [Screenshot](#screenshot)   
 - [Meu Processo](#meu-processo)  
   - [Construído Com](#construído-com)  
@@ -17,7 +17,7 @@ Esta é uma solução para o [Desafio do componente de avaliação interativa do
 
 ## Visão Geral
 
-### O Desáfio
+### O Desafio
 
 Os usuários devem ser capazes de:
 - Visualizar o layout de acordo com o tipo de tamanho tela que estiver acessando
